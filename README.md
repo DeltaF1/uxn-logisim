@@ -25,6 +25,8 @@ opcodes.py - Definitions for where opcodes live in the microcode ROM
 
 ## Microcode Format
 
+**TODO**
+
 ## Microcode Assembler
 
 The microcode assembler is only a partial assembler and relies upon Uxntal assembly for the conversion to binary. It takes in a [format](Microcode Format) similar to tal, and outputs a valid .tal file (Including comments!). Requires uxnasm or asma.tal to assemble into the microcode rom.

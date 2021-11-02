@@ -48,6 +48,10 @@ bus_outputs = (
     "CONST_0_OUT",
     "CONST_1_OUT",
     "CONST_7_OUT",
+    "CONST_X_OUT",
+    "CONST_XX_OUT",
+    "CONST_XXX_OUT",
+    "DEVICE_OUT",
 )
 
 bus_outputs_offset = stack_offset + 2 + 1 # 1 bit for output enable
@@ -84,6 +88,9 @@ tokens = [
 "RESET_IF_CARRY",
 "RESET_IF_ZERO",
 "DONE_FETCH",
+"RESET_PLACEHOLDER",
+"DEVICE_IN",
+"DEVICE_ADDR_IN",
 ]
 
 for i, token in enumerate(tokens):
@@ -118,7 +125,8 @@ exclusive = [
         set(("RAM_ADDR_HIGH", "RAM_ADDR_LOW")),
         set(("PC_HIGH", "PC_LOW")),
         set(("ALU_HIGH", "ALU_LOW")),
-        set(("ALU_ADD", "ALU_SUB", "ALU_MUL", "ALU_DIV", "ALU_AND", "ALU_OR", "ALU_XOR", "ALU_SHIFT")),
+        set(("ALU_ADD", "ALU_SUB", "ALU_MUL", "ALU_DIV", "ALU_AND", "ALU_OR", "ALU_XOR", "ALU_SHIFT", "ALU_OUT")),
+        set(("ALU_OUT", "ALU_LATCH")),
 ]
 
 opcode_offsets = opcodes.generate_opcode_offsets()
