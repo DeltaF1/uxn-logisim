@@ -1,11 +1,15 @@
 # Uxn-Logisim
 
+Implements the Uxn instruction set in digital hardware. 
+
+![An animation showing different Uxn mode bits lighting up as stack control signals flow through logic gates](splash.gif)
+
 ## Contents
 
-cpu.circ - The Logisim file
-microcode.mc - Microcode source file
-microcode-asm.py - Microcode assembler
-opcodes.py - Definitions for where opcodes live in the microcode ROM
+* cpu.circ - The Logisim file
+* microcode.mc - Microcode source file
+* microcode-asm.py - Microcode assembler
+* opcodes.py - Definitions for where opcodes live in the microcode ROM
 
 ## Quickstart
 
