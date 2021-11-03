@@ -15,12 +15,12 @@ Implements the Uxn instruction set in digital hardware. Very WIP.
 
 - The program counter doesn't reset to 0x0100
   - To fix this, hold down the Reset button attached to the program counter and press Ctrl-T twice to advance the clock. This should set it to 0x0100 and program execution can begin.
+  - Alternatively, type a0 01 00 2c into the first four bytes of the zero-page to make the cpu jump to the start
   - If your ROM contains absolute addressing then you'll need to manualy zero-pad it to start at 0x0100
     ```sh
     cat /dev/zero | head -c 256 > zero-page.rom
     cat zero-page.rom someprogram.rom > padded-program.rom
     ```
-- SFT isn't implemented
 - ROT2/ROT2k are unimplemented
 - Probably a lot of other opcodes don't work either
 - 

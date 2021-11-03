@@ -94,7 +94,7 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="downloadFrequency" val="1.0"/>
-    <a name="simulationFrequency" val="256.0"/>
+    <a name="simulationFrequency" val="1000.0"/>
     <comp lib="0" loc="(100,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="PC_IN"/>
@@ -1075,7 +1075,9 @@ a00038 100038 d00023 8008e8 10008e0 10*0 b001a0 200038
 200038 e00026 8008e8 10008e0 10*0 100038 200028 40000e
 10008e0 12*0 100038 900038 200038 e0002e 8 8
 8 8008e8 10008e0 7*0 9001a0 200038 500027 10008e0
-12*0 9001a0 200038 100020 d00027 8008e8 10008e0
+12*0 200038 100038 d00027 8008e8 10008e0 11*0 200038
+100028 d001af 10008e0 12*0 200038 100038 d0002f 8
+8 8008e8 10008e0
 </a>
       <a name="dataWidth" val="32"/>
       <a name="label" val="Microcode_ROM"/>
