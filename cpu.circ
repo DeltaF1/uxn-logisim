@@ -94,7 +94,7 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="downloadFrequency" val="1.0"/>
-    <a name="simulationFrequency" val="1000.0"/>
+    <a name="simulationFrequency" val="64.0"/>
     <comp lib="0" loc="(100,680)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="PC_IN"/>
@@ -1910,11 +1910,11 @@ a00038 100038 d00023 8008e8 10008e0 10*0 b001a0 200038
       <a name="label" val="Q16"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(280,260)" name="Constant">
+    <comp lib="0" loc="(280,240)" name="Constant">
       <a name="value" val="0x100"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="0" loc="(290,240)" name="Tunnel">
+    <comp lib="0" loc="(280,260)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="label" val="D16"/>
       <a name="width" val="16"/>
@@ -2078,8 +2078,8 @@ a00038 100038 d00023 8008e8 10008e0 10*0 b001a0 200038
     <wire from="(220,220)" to="(420,220)"/>
     <wire from="(240,630)" to="(320,630)"/>
     <wire from="(250,740)" to="(280,740)"/>
+    <wire from="(280,240)" to="(310,240)"/>
     <wire from="(280,260)" to="(310,260)"/>
-    <wire from="(290,240)" to="(310,240)"/>
     <wire from="(320,270)" to="(320,290)"/>
     <wire from="(330,720)" to="(440,720)"/>
     <wire from="(340,250)" to="(380,250)"/>
