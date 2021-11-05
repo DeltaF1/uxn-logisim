@@ -36,7 +36,7 @@ names = [
   "SFT",
 ]
 
-def generate_opcode_offsets(counter_width=6, add_uxntal_offset=True):
+def generate_opcode_offsets(counter_width=7, add_uxntal_offset=True):
     TWO = 1 << counter_width
     K = 2 << counter_width
     uxntal_offset = 0x100 if add_uxntal_offset else 0x000
