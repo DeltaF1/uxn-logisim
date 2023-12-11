@@ -21,9 +21,6 @@ Implements the Uxn instruction set in digital hardware. Very WIP.
     cat /dev/zero | head -c 256 > zero-page.rom
     cat zero-page.rom someprogram.rom > padded-program.rom
     ```
-- ROT2/ROT2k are unimplemented
-- Probably a lot of other opcodes don't work either
-- 
 
 ## Quickstart
 
